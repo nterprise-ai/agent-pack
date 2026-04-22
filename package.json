@@ -1,0 +1,12 @@
+{
+  "name": "agent-pack",
+  "version": "1.2.0",
+  "private": true,
+  "scripts": {
+    "test": "bun test $(find .claude/skills -name '*.test.ts' | sed 's|^|./|' | tr '\\n' ' ')"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/bun": "latest"
+  }
+}
